@@ -47,7 +47,7 @@ export type BotProps = {
   observersConfig?: observersConfigType;
 };
 
-const defaultWelcomeMessage = 'Hi there! How can I help?';
+const defaultWelcomeMessage = 'Olá, como posso ajudar?';
 
 /*const sourceDocuments = [
     {
@@ -217,7 +217,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
   };
 
   // Handle errors
-  const handleError = (message = 'Oops! There seems to be an error. Please try again.') => {
+  const handleError = (message = 'Oops! Parece que houeve um erro. Por favor, tente novamente.') => {
     setMessages((prevMessages) => {
       const messages: MessageType[] = [...prevMessages, { message, type: 'apiMessage' }];
       addChatMessage(messages);
